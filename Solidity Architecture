@@ -1,32 +1,37 @@
 Solidity architecture
 
 Function names and input and outputs:
-boardOfDirectors = [addresses] 
-message = []
-make modifier - only boardofDirectors
-modifier checkBoardOfDirectors(address boardOfDirectors) internal  {
-	make only
+contractAddress = marketplaceAddress
+Function create ticket(string memory ticketURI) public returns(uint) {
+	_ticketIds.increment();
+	uint256 newTicketId = _ticketIds.current();
+	_mint(msg.sender, newTicketId);
+_setTicketURI(newTicketId, ticketURU);
+setApprovalForAll(contractAddress, true);
+return newTicketId;
 }
-message(input: teacher name that about, message - saves to private blockchain only viewable by board of director members)
-function getMessage(message) external {
-	input message
-	store message in message
-	get date
-	get time
+Counters
+Address payable owner
+Uint256 listingPrice = ___eth
+constructor() {
+Owner = payable(msg.sender);
 }
-boardOfDirectors (send message to all board members individually - only message sent as copy to make sure all got)
-function sendBoardOfDirectors(address getMessage, address boardOfDirectors) internal {
-	checkBoardOfDirectors
-	tell new message updated to blockchain * how to do
+Function createTicket(
+	Address ticketContract,
+	Uint256 ticketId,
+Uint256 price
+) public payable nonReentrant {
+	Require(price > 0);
+Require (msg.value == listingPrice);
+_tokenIds.increment();
+Uint256 tokenId = _tokenIds.current();
 }
-# make copy to blockchain only give directors access to view
-on blockchain 
-function makeCopy(address message) internal {
-	checkOnlyBoardOfDirectors
-	save address to private blockchain only board of directors can view....
+Function createMarketSale(
+Address ticketContract,
+Uint256 ticketId
+) public payable nonReentrant {
 }
-* can add later if have time - make voting system to change board of directors if want to change directors - need 80% of vote
-function changeDirector(){
-}
-getdate 
-gettime 
+Function fetchMarketItems() public view returns (MarketItem[] memory) {}
+Function fetchMyTickets() public view returns (MarketItem[] memory) {}
+Function fetchTicketsCreated() public view returns (MarketItem[] memory) {}
+
