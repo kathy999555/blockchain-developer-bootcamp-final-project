@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('https://www.pexels.com/photo/lighted-ferris-wheel-at-night-2840896/');
 }
 
 .footer {
@@ -31,6 +32,7 @@
 .title a {
   color: #0070f3;
   text-decoration: none;
+  
 }
 
 .title a:hover,
@@ -48,6 +50,7 @@
 .title,
 .description {
   text-align: center;
+
 }
 
 .description {
@@ -106,6 +109,7 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+
 }
 
 @media (max-width: 600px) {

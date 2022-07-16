@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Blockchain Final Project Idea:
+Making going to an amusement park much more exclusive. Based on the concept of NFT’s it will create a more unique experience. It will allow the owner entry into the park for a year and will offer a fast pass, a private lounge with a restaurant and bar so buyers won’t have to wait for service or wait in line for a restaurant - depending on who selling ticket provides in discription. (depend where doing ie Disney could be really magical…). It would also allow buyers to stay past closing hours so they can experience going on the rides exclusively without anyone else which would add to the exclusivity and be a memorable experience. There would be limited amount. Only park managers could sell them but if someone buys one then can re-sell. To get into the park there would have to be a show of the NFT and ownership (use metamask – prove with wallet of public key) and at the front the owner would receive a wristband (based on fast track braclets from disney) which would allow them the perks described on thie ticket (employees will be notified of special perks when arrive due to managers selling tickets and setting up facilities). Scan the barcode given on the ticket and verify that the ticket ownership is indeed theirs.  
 
-## Getting Started
+Directory Structure:
+contracts: Smart contracts contain TICKET.sol and TICKETMarket.sol
+pages: contains pages of the website
+scripts: know where deployed to: get ticket address and ticketmarket address
+styles: give access to css styles
+test: contains test.js for the 5 unit tests
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Installing Dependencies instructions:
+To run in a local envrionment the following dependencies will need to be downloaded:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install npx
+make sure have node.js
+npm install yarn
+yarn add ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts ipfs-http-client axios
+tailwindcss: yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
+Web3: 
+- web3js: npm i -g web3
+- ethers: npm i-g ethers
+- Metamask: npm i @metamask/detect-provider
+- Install metamask wallet in browser
+.env file: npm i dotenv
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Accessing or running project on local node instructions:
+Clone project repository onto your local machine:
+git clone https://github.com/kathy999555/blockchain-developer-bootcamp-final-project.git
+cd blockchian-developer-bootcamp-final-project
+In terminal run: npx hardhat test (if want to test)
+Then run: npx hardhat node
+In another terminal run: npx hardhat run scripts/deploy.js --network localhost
+The terminal should show 2 addresses: ticketMarket contract deployed to 'address given' and ticket contract deployed to 'address give'. Copy these addresses and paste then im the config.js file in given spots. 
+Then put private key in the secret document.
+Then in terminal run: npm run dev
+Get website (http://localhost:3000) given and put in a browser - test ethers are given in terminal with hardhat node
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Deploy Contracts to Mumbai Test Network ****
 
-## Learn More
+Add the Mumbai network to your metamask account: 
+Network Name: Mumbai
+Network URL: https://matic-mumbai.chainstacklabs.com
+Chain ID: 8001
 
-To learn more about Next.js, take a look at the following resources:
+After run nxp hardhat run scripts/deploy.js --network mumbai
+Then change the ticketaddress and ticketmarketaddress in the config.js file. 
+Then run: npm run dev
+Get webstie given (http://localhost:3000) and put in a browser - if want test matic can get from: https://faucet.polygon.technology/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Screencast:
+https://www.loom.com/share/239bd5de68584507b46057861e4db0b8
+In the example photo given there is a room for a barcode to be put on the ticket as an example for the park managers to put on. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Front-end URL on github pages:
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Possible Improvements:
+- could make sell tickets private so only park can sell these exclusive tickets
+- make photo optional as technically don't need barcode but could make entrace easier
+- add qr code to be scanned at ticket booth at park
+- add more information about the park and logo
