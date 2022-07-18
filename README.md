@@ -1,6 +1,0 @@
-# blockchain-developer-bootcamp-final-project
-Blockchain Bootcamp 2021
-
-Blockchain Final Project Idea:
-
-Making going to an amusement park much more exclusive. Based on the concept of NFT’s it will create more unique experience. It will allow the owner entry into the park for a year and will offer a fast pass, a private lounge with a restaurant and bar so buyers won’t have to wait for service or wait in line for a restaurant. (depend where doing ie Disney could be really magical…). It would also allow buyers to stay past closing hours so they can experience going on the rides exclusively without anyone else which would add to the exclusivity and be a memorable experience. There would be 20 of them for sale throughout the whole world. To get into the park there would have to be a show of the NFT and ownership (use metamask – not sure how to show yet – prove with wallet of public key) and at the front the owner would receive a wristband (based on fast track braclets from disney) which would allow them entry into the lounge, allow them to go the fast track routes and to show to employees after closing time (employees will be notified that they are allowed to stay out late when arrive). 
