@@ -55,6 +55,7 @@ https://www.loom.com/share/239bd5de68584507b46057861e4db0b8
 In the example photo given there is a room for a barcode to be put on the ticket as an example for the park managers to put on. 
 
 Front-end URL on github pages:
+https://kathy999555.github.io/blockchain-developer-bootcamp-final-project/
 
 
 Possible Improvements:
