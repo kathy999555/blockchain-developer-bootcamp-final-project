@@ -55,10 +55,18 @@ https://www.loom.com/share/239bd5de68584507b46057861e4db0b8
 For park managers, in the example photo given there is a room for a barcode to be placed on the ticket.
 
 Front-end URL on github pages:
+https://kathy999555.github.io/blockchain-developer-bootcamp-final-project/
 
 
 Possible Improvements:
+<<<<<<< HEAD
 - Could make sell tickets private so only park can sell these exclusive tickets
 - Make photo optional as technically don't need barcode but could make park entrance easier
 - Add QR code to be scanned at ticket booth at park
 - Add more information about the park and logo
+=======
+- could make sell tickets private so only park can sell these exclusive tickets
+- make photo optional as technically don't need barcode but could make entrace easier
+- add qr code to be scanned at ticket booth at park
+- add more information about the park and logo
+>>>>>>> 5c885fd731b7fffc2fdeb26f751652df891911c9
