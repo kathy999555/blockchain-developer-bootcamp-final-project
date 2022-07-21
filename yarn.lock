@@ -8235,12 +8235,7 @@
   dependencies:
     "lcid" "^1.0.0"
 
-"os-tmpdir@^1.0.1":
-  "integrity" "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ="
-  "resolved" "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
-  "version" "1.0.2"
-
-"os-tmpdir@~1.0.2":
+"os-tmpdir@^1.0.1", "os-tmpdir@~1.0.2":
   "integrity" "sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g=="
   "resolved" "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
   "version" "1.0.2"
@@ -8454,13 +8449,8 @@
   "resolved" "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz"
   "version" "4.0.0"
 
-"path-is-absolute@^1.0.0":
+"path-is-absolute@^1.0.0", "path-is-absolute@^1.0.1":
   "integrity" "sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg=="
-  "resolved" "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
-  "version" "1.0.1"
-
-"path-is-absolute@^1.0.1":
-  "integrity" "sha1-F0uSaHNVNP+8es5r9TpanhtcX18="
   "resolved" "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
   "version" "1.0.1"
 

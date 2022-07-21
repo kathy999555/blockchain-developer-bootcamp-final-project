@@ -1,5 +1,5 @@
 Blockchain Final Project Idea:
-Making going to an amusement park much more exclusive. Based on the concept of NFT’s it will create a more unique experience. It will allow the owner entry into the park for a year and will offer a fast pass, a private lounge with a restaurant and bar so buyers won’t have to wait for service or wait in line for a restaurant - depending on who selling ticket provides in discription. (depend where doing ie Disney could be really magical…). It would also allow buyers to stay past closing hours so they can experience going on the rides exclusively without anyone else which would add to the exclusivity and be a memorable experience. There would be limited amount. Only park managers could sell them but if someone buys one then can re-sell. To get into the park there would have to be a show of the NFT and ownership (use metamask – prove with wallet of public key) and at the front the owner would receive a wristband (based on fast track braclets from disney) which would allow them the perks described on thie ticket (employees will be notified of special perks when arrive due to managers selling tickets and setting up facilities). Scan the barcode given on the ticket and verify that the ticket ownership is indeed theirs.  
+Making going to an amusement park much more exclusive. Based on the concept of NFT’s it will create a more unique experience depending on what the park owner is offering. For example it could allow the ticket owner entry into the park for a year, a fast pass, a private lounge with a restaurant and bar so buyers won’t have to wait for service or wait in line for a restaurant - depending on who selling ticket provides in description. Additional features would allow buyers to stay past park closing hours as one of the limited few who experience going on rides exclusively. There would be limited amount. Only park managers may sell these passes but if someone buys one then they can be sold via the Dapp. To enter the park the holder would need to show the NFT and ownership (use metamask – prove with wallet of public key) and at the entrance the owner would receive a wristband (based on fast track bracelets from Disney) which would allow them the perks described on the ticket. Park employees will need to be advised by managers of special perks on guest arrival. Scan the ticket barcode to verify that the ticket ownership is indeed theirs and not counterfeit.   
 
 Directory Structure:
 contracts: Smart contracts contain TICKET.sol and TICKETMarket.sol
@@ -10,7 +10,7 @@ test: contains test.js for the 5 unit tests
 
 
 Installing Dependencies instructions:
-To run in a local envrionment the following dependencies will need to be downloaded:
+To run in a local environment the following dependencies will need to be downloaded:
 
 npm install npx
 make sure have node.js
@@ -28,12 +28,12 @@ Web3:
 Accessing or running project on local node instructions:
 Clone project repository onto your local machine:
 git clone https://github.com/kathy999555/blockchain-developer-bootcamp-final-project.git
-cd blockchian-developer-bootcamp-final-project
+cd blockchain-developer-bootcamp-final-project
 Create a file called .secret There add in your private key for any metamask account. It doesn't matter if there is nothing on it. 
 In terminal run: npx hardhat test (if want to test)
 Then run: npx hardhat node
 In another terminal run: npx hardhat run scripts/deploy.js --network localhost
-The terminal should show 2 addresses: ticketMarket contract deployed to 'address given' and ticket contract deployed to 'address give'. Copy these addresses and paste then im the config.js file in given spots. 
+The terminal should show 2 addresses: ticketMarket contract deployed to 'address given' and ticket contract deployed to 'address give'. Copy these addresses and paste then in the config.js file in given spots. 
 Then put private key in the secret document.
 Then in terminal run: npm run dev
 Get website (http://localhost:3000) given and put in a browser - test ethers are given in terminal with hardhat node
@@ -52,13 +52,13 @@ Get webstie given (http://localhost:3000) and put in a browser - if want test ma
 
 Screencast:
 https://www.loom.com/share/239bd5de68584507b46057861e4db0b8
-In the example photo given there is a room for a barcode to be put on the ticket as an example for the park managers to put on. 
+For park managers, in the example photo given there is a room for a barcode to be placed on the ticket.
 
 Front-end URL on github pages:
 
 
 Possible Improvements:
-- could make sell tickets private so only park can sell these exclusive tickets
-- make photo optional as technically don't need barcode but could make entrace easier
-- add qr code to be scanned at ticket booth at park
-- add more information about the park and logo
+- Could make sell tickets private so only park can sell these exclusive tickets
+- Make photo optional as technically don't need barcode but could make park entrance easier
+- Add QR code to be scanned at ticket booth at park
+- Add more information about the park and logo
