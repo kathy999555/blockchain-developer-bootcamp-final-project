@@ -68,7 +68,7 @@ export default function CreatorDashboard() {
                 {
                     Boolean(sold.length) && (
                         <div>
-                            <h2 ClassName="text-2xl py-2">Tickets Sold</h2>
+                            <h2 className="text-2xl py-2">Tickets Sold</h2>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
                             {
                                 sold.map((ticket, i) => (
