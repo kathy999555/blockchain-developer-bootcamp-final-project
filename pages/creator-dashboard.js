@@ -7,8 +7,8 @@ import {
     ticketmarketaddress, ticketaddress
 } from '../config'
 
-import TICKET from '../artifacts/contracts/TICKET.sol/Ticket.json'
-import TICKETMarket from '../artifacts/contracts/TICKETMarket.sol/TICKETMarket.json'
+import TICKET from '../utils/Ticket.json'
+import TICKETMarket from '../utils/TICKETMarket.json'
 
 export default function CreatorDashboard() {
     const [tickets, setTickets] = useState([])
