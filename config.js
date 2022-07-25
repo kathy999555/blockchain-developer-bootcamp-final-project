@@ -1,2 +1,2 @@
-export const ticketaddress = "0x7858dca90283b6A57F79bA4AFd3b12570d3a7E3E";
-export const ticketmarketaddress = "0xb660eb8597a29Ca427496F0f18aFB16F41503878";
+export const ticketaddress = "0x55eE69D539d54A26CB002aA72D216a90ebE68d20";
+export const ticketmarketaddress = "0x1994FBeC85547F27D8f49e18662F0c6B0c6eD53d";

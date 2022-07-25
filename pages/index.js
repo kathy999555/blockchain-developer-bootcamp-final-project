@@ -1,7 +1,11 @@
 import { ethers } from 'ethers'
+
 import { useEffect, useState } from 'react'
+
 import axios from 'axios'
 import Web3Modal from 'web3modal'
+import { useWeb3} from "@3rdweb/hooks"
+import CreatorDashboard from "./creator-dashboard"
 import {
   ticketaddress, ticketmarketaddress
 } from '../config'
@@ -10,6 +14,7 @@ import TICKET from '../utils/Ticket.json'
 import TICKETMarket from '../utils/TICKETMarket.json'
 
 export default function Home() {
+  const { address, connectWallet } = useWeb3();
   const [tickets, setTickets] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
   useEffect(() => {
@@ -63,7 +68,20 @@ export default function Home() {
 
   }
   if (loadingState === 'loaded' && !tickets.length) return (
-    <h1 className="px-20 py-10 text-3xl">No Tickets Available</h1>
+    <h1 className="px-20 py-10 text-3xl">No Tickets Available
+    <>
+    {address ?
+        <CreatorDashboard address={address} />
+        :
+        (
+      <button onClick={() => connectWallet("injected")} id='connect-button' className="px-4 py-2 rounded-md bg-blue-600 cursor-pointer hover:bg-purple-500 text-xl font-semibold duration-100 text-white"
+        >
+          Connect Metamask
+        </button>
+        )
+      }
+    </>
+    </h1>
   )
 
   return (
@@ -90,7 +108,18 @@ export default function Home() {
 
         </div>
       </div>
+      <>
+      {address ?
+        <CreatorDashboard address={address} />
+        :
+        (
+      <button onClick={() => connectWallet("injected")} id='connect-button' className="px-4 py-2 rounded-md bg-blue-600 cursor-pointer hover:bg-purple-500 text-xl font-semibold duration-100 text-white"
+        >
+          Connect Metamask
+        </button>
+        )
+      }
+      </>
     </div>
   )
-}
-
+}     
