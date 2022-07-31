@@ -1,3 +1,5 @@
+import type { NextPage } from "next";
+import { ConnectWallet } from "./_app";
 
 import { ethers } from 'ethers'
 
@@ -12,8 +14,9 @@ import {
 import TICKET from '../utils/Ticket.json'
 import TICKETMarket from '../utils/TICKETMarket.json'
 
-export default function Home() {
-  const [tickets, setTickets] = useState([])
+
+const Home: NextPage = () => {
+    const [tickets, setTickets] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
   useEffect(() => {
     loadTICKETS()
@@ -23,9 +26,9 @@ export default function Home() {
    * It fetches the market items from the market contract, then fetches the token metadata from the
    * token contract, and then returns an array of objects with the token metadata and the market item
    * data
-  */ 
+   */
   async function loadTICKETS() {
-    const provider = new ethers.providers.JsonRpcProvider("https://polygon-mumbai.infura.io/v3/2eaabcdf283441e6a7de5afb872cf1af")
+    const provider = new ethers.providers.JsonRpcProvider()
     const tokenContract = new ethers.Contract(ticketaddress, TICKET.abi, provider)
     const marketContract = new ethers.Contract(ticketmarketaddress, TICKETMarket.abi, provider)
     const data = await marketContract.fetchMarketItems()
@@ -81,6 +84,7 @@ export default function Home() {
                   <div className="p-4">
                     <p style={{ height: '64px' }} className="text-2xl font-semibold">{ticket.name}</p>
                     <div style={{ height: '70px', overflow: 'hidden' }}>
+                    
                       <p className="text-yellow-400">{ticket.description}</p>
                     </div>
                   </div>
@@ -95,5 +99,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
-}   
+    
+  );
+};
+export default Home;

@@ -1830,6 +1830,11 @@
   resolved "https://registry.npmjs.org/@magic-sdk/types/-/types-1.6.0.tgz"
   integrity sha512-CvVUPTF9tSLNFA4JhcAFjheiqWyVp9r9ooy/AheK+0rWRZCxE5QCwc81d2FduDTqzEJZeUV9+9F9R0AplhnX7w==
 
+"@metamask/detect-provider@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@metamask/detect-provider/-/detect-provider-1.2.0.tgz"
+  integrity sha512-ocA76vt+8D0thgXZ7LxFPyqw3H7988qblgzddTDA6B8a/yU0uKV42QR/DhA+Jh11rJjxW0jKvwb5htA6krNZDQ==
+
 "@metamask/eth-sig-util@^4.0.0":
   version "4.0.1"
   resolved "https://registry.npmjs.org/@metamask/eth-sig-util/-/eth-sig-util-4.0.1.tgz"
@@ -2411,7 +2416,7 @@
 
 "@thirdweb-dev/react@^2.5.1":
   version "2.5.1"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/react/-/react-2.5.1.tgz"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/react/-/react-2.5.1.tgz#e200b0662884e911512a6c4ea06fa5f82130e7e2"
   integrity sha512-JIw2jzywBAF5yML74EQUX+fFGXoU0+WDObxSjzyLDGqRNK+e0eGmipYdBfBHxiddJGBC1h+nqKg01OMppYY9/w==
   dependencies:
     "@gnosis.pm/safe-core-sdk" "2.1.0"
@@ -2426,7 +2431,7 @@
 
 "@thirdweb-dev/sdk@^2.3.32":
   version "2.3.32"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/sdk/-/sdk-2.3.32.tgz"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/sdk/-/sdk-2.3.32.tgz#47c22fe784078a6dc6f3dd4a854f859ee2aceb4b"
   integrity sha512-z1Q78xg9PcPmXzblLAIGVYBGLiZ/eUU4//+DX4zXxMz0zDapbMTXPNsrb47KLhkQmjS/hq0vbn9RCw3KWtQZ4Q==
   dependencies:
     "@thirdweb-dev/contracts" "^3.0.0"
@@ -12494,6 +12499,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.7.4:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
+  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
 
 typewise-core@^1.2, typewise-core@^1.2.0:
   version "1.2.0"
