@@ -51,11 +51,11 @@ Then run: npm run dev
 Get webstie given (http://localhost:3000) and put in a browser - if want test matic can get from: https://faucet.polygon.technology/
 
 Screencast:
-https://www.loom.com/share/239bd5de68584507b46057861e4db0b8
+https://www.loom.com/share/f6bdc8f18f934c12b863be51704b9d77
 For park managers, in the example photo given there is a room for a barcode to be placed on the ticket.
 
 Front-end URL on github pages:
-https://blockchain-developer-bootcamp-final-project-1lt72n5d0.vercel.app/
+https://blockchain-developer-bootcamp-final-project-inkpj9k7h.vercel.app
 
 
 Possible Improvements:
