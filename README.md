@@ -45,7 +45,7 @@ Network URL: https://matic-mumbai.chainstacklabs.com
 Chain ID: 8001
 
 clone project onto local machine like before and add .secret and private key
-Under pages, in index.js add "https://polygon-mumbai.infura.io/v3/2eaabcdf283441e6a7de5afb872cf1af" into the JsonRpcProvider function on line 25
+Under pages, in index.tsx add "https://polygon-mumbai.infura.io/v3/2eaabcdf283441e6a7de5afb872cf1af" into the JsonRpcProvider function on line 25
 After run nxp hardhat run scripts/deploy.js --network mumbai
 Then change the ticketaddress and ticketmarketaddress in the config.js file. 
 Then run: npm run dev
