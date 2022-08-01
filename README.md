@@ -55,6 +55,7 @@ The terminal should show 2 addresses: ticketMarket contract deployed to 'address
 Then put private key in the secret document.
 Then in terminal run: npm run dev
 Get website (http://localhost:3000) given and put in a browser -if want test matic can get from: https://faucet.polygon.technology/
+Make sure you are on the mumbai network
 
 Screencast:
 https://www.loom.com/share/f6bdc8f18f934c12b863be51704b9d77
