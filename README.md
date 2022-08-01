@@ -44,12 +44,17 @@ Network Name: Mumbai
 Network URL: https://matic-mumbai.chainstacklabs.com
 Chain ID: 8001
 
-clone project onto local machine like before and add .secret and private key
+git clone https://github.com/kathy999555/blockchain-developer-bootcamp-final-project.git
+cd blockchain-developer-bootcamp-final-project
+Create a file called .secret There add in your private key for any metamask account. It doesn't matter if there is nothing in the account. 
+In terminal run: npx hardhat test (if want to test)
 Under pages, in index.tsx add "https://polygon-mumbai.infura.io/v3/2eaabcdf283441e6a7de5afb872cf1af" into the JsonRpcProvider function on line 31
-After run nxp hardhat run scripts/deploy.js --network mumbai
-Then change the ticketaddress and ticketmarketaddress in the config.js file. 
-Then run: npm run dev
-Get webstie given (http://localhost:3000) and put in a browser - if want test matic can get from: https://faucet.polygon.technology/
+Then run: npx hardhat node
+In another terminal run: npx hardhat run scripts/deploy.js --network mumbai
+The terminal should show 2 addresses: ticketMarket contract deployed to 'address given' and ticket contract deployed to 'address give'. Copy these addresses and paste then in the config.js file in given spots. 
+Then put private key in the secret document.
+Then in terminal run: npm run dev
+Get website (http://localhost:3000) given and put in a browser -if want test matic can get from: https://faucet.polygon.technology/
 
 Screencast:
 https://www.loom.com/share/f6bdc8f18f934c12b863be51704b9d77
