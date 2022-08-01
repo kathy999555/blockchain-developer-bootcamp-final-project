@@ -29,7 +29,7 @@ Accessing or running project on local node instructions:
 Clone project repository onto your local machine:
 git clone https://github.com/kathy999555/blockchain-developer-bootcamp-final-project.git
 cd blockchain-developer-bootcamp-final-project
-Create a file called .secret There add in your private key for any metamask account. It doesn't matter if there is nothing on it. 
+Create a file called .secret There add in your private key for any metamask account. It doesn't matter if there is nothing in the account. 
 In terminal run: npx hardhat test (if want to test)
 Then run: npx hardhat node
 In another terminal run: npx hardhat run scripts/deploy.js --network localhost
@@ -44,6 +44,7 @@ Network Name: Mumbai
 Network URL: https://matic-mumbai.chainstacklabs.com
 Chain ID: 8001
 
+clone project onto local machine like before and add .secret and private key
 Under pages, in index.js add "https://polygon-mumbai.infura.io/v3/2eaabcdf283441e6a7de5afb872cf1af" into the JsonRpcProvider function on line 25
 After run nxp hardhat run scripts/deploy.js --network mumbai
 Then change the ticketaddress and ticketmarketaddress in the config.js file. 
