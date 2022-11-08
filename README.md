@@ -61,8 +61,8 @@ Screencast:
 https://www.loom.com/share/f6bdc8f18f934c12b863be51704b9d77
 For park managers, in the example photo given there is a room for a barcode to be placed on the ticket.
 
-Front-end URL on github pages:
-https://blockchain-developer-bootcamp-final-project-inkpj9k7h.vercel.app
+Front-end URL on vercel:
+https://blockchain-developer-bootcamp-final-project-r2cyusk8g.vercel.app
 
 
 Possible Improvements:
