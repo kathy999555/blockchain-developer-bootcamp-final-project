@@ -107,7 +107,7 @@ export default function CreateItem() {
                     )
                 }
                 <button 
-                    onClick={createItem} 
+                    onClick={createSale} 
                     className="font-bold mt-4 bg-purple-500 text-white rounded p-4 shadow-lg"
                     >
                     Create Ticket
